@@ -16,3 +16,9 @@
 # Dependency directories (remove the comment below to include it)
 # vendor/
 pwnmothership
+# Python cache (generated, never tracked)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
