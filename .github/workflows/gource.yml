@@ -1,0 +1,37 @@
+name: Gource Video Generator
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  gource:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generate Gource Video
+        uses: Acquati/gource-action@v1
+        with:
+          output: gource/gource.mp4
+          title: pwnmothership Development
+          seconds-per-day: 0.5
+          auto-skip-seconds: 0.5
+          hide-files: true
+          viewport: 1920x1080
+          user-scale: 1.5
+          background-color: 000000
+
+      - name: Commit Gource video
+        run: |
+          git config user.name "Corneel (Hermes agent)"
+          git config user.email "corneel@freedom.nl"
+          git add gource/gource.mp4
+          git commit -m "Add Gource video for development visualization" || echo "No changes to commit"
+          git push

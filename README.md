@@ -6,7 +6,11 @@ You can run it on the **pwnahotchi** itself.
 
 
 
-![DEMO](https://raw.githubusercontent.com/ad/pwnmothership/master/demo/demo.gif) 
+![DEMO](https://raw.githubusercontent.com/itsdarklikehell/pwnmothership/master/demo/demo.gif)
+
+## Gource Development Visualization
+
+![Gource](https://raw.githubusercontent.com/itsdarklikehell/pwnmothership/master/gource/gource.mp4)
 
 
 
