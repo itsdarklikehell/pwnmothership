@@ -1,5 +1,11 @@
 #  PWNMOTHERSHIP
 
+
+[![CI](https://github.com/itsdarklikehell/pwnmothership/actions/workflows/ci.yml/badge.svg)](https://github.com/itsdarklikehell/pwnmothership/actions/workflows/ci.yml)
+[![License](https://img.shields.io/github/license/itsdarklikehell/pwnmothership)](LICENSE)
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md)
+
+
 The place where your [pwnagotchi](https://pwnagotchi.ai/) can send their current stats.
 
 You can run it on the **pwnahotchi** itself.
